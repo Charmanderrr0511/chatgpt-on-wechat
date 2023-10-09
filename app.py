@@ -3,11 +3,15 @@
 import os
 import signal
 import sys
+import re
 
 from channel import channel_factory
 from common.log import logger
 from config import conf, load_config
 from plugins import *
+
+import requests
+
 
 
 def sigterm_handler_wrap(_signo):
@@ -52,6 +56,6 @@ def run():
         logger.error("App startup failed!")
         logger.exception(e)
 
-
 if __name__ == "__main__":
     run()
+

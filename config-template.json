@@ -24,6 +24,10 @@
     "看",
     "找"
   ],
+  "keyword": {
+    "关键字匹配": "测试成功"
+  },
+  
   "speech_recognition": false,
   "group_speech_recognition": false,
   "voice_reply_voice": false,
